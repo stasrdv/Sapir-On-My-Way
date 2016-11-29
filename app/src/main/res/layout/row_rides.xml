@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+
+
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"></LinearLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        >
+        <ImageView
+            android:id="@+id/payment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+
+
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="right"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dollar"
+
+                android:layout_marginTop="30dp"
+
+
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/smoke"
+
+                android:layout_marginTop="3dp"
+
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="303dp"
+                android:layout_height="83dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="0dp"
+                >
+
+                <com.facebook.login.widget.ProfilePictureView
+                    android:id="@+id/picture"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    style="@style/TextAppearance.AppCompat">
+
+                </com.facebook.login.widget.ProfilePictureView>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="249dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Small Text"
+                            android:id="@+id/full_name"
+                            android:paddingLeft="13dp"
+                            android:textColor="#040404" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Small Text"
+                            android:id="@+id/num_ratings"
+                            android:paddingLeft="13dp"
+                            android:textColor="#040404" />
+
+                        <RatingBar
+                            android:transformPivotX="20dp"
+                            android:transformPivotY="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:scaleX="0.5"
+                            android:scaleY="0.5"
+                            android:id="@+id/ratingBar2"
+                            android:backgroundTint="#ffffff"
+                            android:rating="5"
+                            android:stepSize="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/source"
+            android:textColor="#040404" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/dest"
+            android:textColor="#040404" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/out_time"
+            android:textColor="#040404" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/passangers"
+            android:textColor="#040404" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/phone"
+            android:textColor="#040404" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="1">
+
+        <Button
+
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="הצטרף"
+            android:id="@+id/joinButton"
+            android:layout_marginLeft="10dp"
+            android:background="#E3F2FD"
+            android:textColor="#1A237E"
+            android:textSize="15sp"
+            android:drawableRight="@drawable/add"
+
+            android:layout_weight="0.05" />
+
+        <ImageView
+            android:id="@+id/smoking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

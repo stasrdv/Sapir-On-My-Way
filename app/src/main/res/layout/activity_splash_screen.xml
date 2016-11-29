@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/frt" >
+
+
+
+
+    <ImageView
+        android:layout_width="274dp"
+        android:layout_height="357dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/shak"
+
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Loading Please Wait"
+        android:id="@+id/textView"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:textSize="50dp"
+        android:textColor="#454545"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:progress="@integer/google_play_services_version" />
+</RelativeLayout>
